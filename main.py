@@ -1,11 +1,7 @@
 import telebot
 import requests
 import weather
-import logging
 from weather_db import log_request, create_table
-
-# setting up logging
-logging.basicConfig(level=logging.INFO)
 
 # Init bot
 API_TOKEN = 'bot_api_key'
