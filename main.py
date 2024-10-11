@@ -39,7 +39,7 @@ def get_weather(message):
 
 
     except Exception as err:
-        response = str(err)
+        response = "Weather api error, mayber lost connection, try again later"
         bot.send_message(message.chat.id, response)
         log_request(message.chat.id, message.text, response) # Remove line to create logs without error
 
@@ -56,4 +56,4 @@ def correct_response(city, weather_data):
 # Starting bot and creating table in PostgreSQL
 if __name__ == '__main__':
     create_table()
-    bot.infinity_polling()
+    bot.polling(none_stop=True)
