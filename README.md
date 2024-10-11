@@ -76,7 +76,7 @@ Returns the list of logs of all user queries. Supports pagination and optional f
 ```json
 [
   {
-    "user_id": 833274610,
+    "user_id": your_user_id,
     "command": "/weather Kazan",
     "timestamp": "2024-10-11T00:25:30.557953",
     "response": "Weather in Kazan:\nTemp: 15.6°C\nFeels like: 14.2°C\nDescription: Clear sky\nHumidity: 60%\nWind speed: 3.5 m/s"
@@ -111,7 +111,7 @@ Returns the history of requests made by a specific user.
 ```json
 [
   {
-    "user_id": 833274610,
+    "user_id": your_user_id,
     "command": "/weather Kazan",
     "timestamp": "2024-10-11T00:25:30.557953",
     "response": "Weather in Kazan:\nTemp: 15.6°C\nFeels like: 14.2°C\nDescription: Clear sky\nHumidity: 60%\nWind speed: 3.5 m/s"
@@ -141,7 +141,7 @@ GET /logs?page=1&page_size=5&start_time=2024-10-10T00:00:00&end_time=2024-10-11T
 ```json
 [
   {
-    "user_id": 833274610,
+    "user_id": your_user_id,
     "command": "/weather Kazan",
     "timestamp": "2024-10-11T00:25:30.557953",
     "response": "Weather in Kazan:\nTemp: 15.6°C\nFeels like: 14.2°C\nDescription: Clear sky\nHumidity: 60%\nWind speed: 3.5 m/s"
@@ -153,14 +153,14 @@ GET /logs?page=1&page_size=5&start_time=2024-10-10T00:00:00&end_time=2024-10-11T
 
 **Request**:
 ```
-GET /logs/833274610?page=1&page_size=5
+GET /logs/your_user_id?page=1&page_size=5
 ```
 
 **Response**:
 ```json
 [
   {
-    "user_id": 833274610,
+    "user_id": your_user_id,
     "command": "/weather Kazan",
     "timestamp": "2024-10-11T00:25:30.557953",
     "response": "Weather in Kazan:\nTemp: 15.6°C\nFeels like: 14.2°C\nDescription: Clear sky\nHumidity: 60%\nWind speed: 3.5 m/s"
