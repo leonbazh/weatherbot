@@ -79,7 +79,7 @@ Returns the list of logs of all user queries. Supports pagination and optional f
     "user_id": 833274610,
     "command": "/weather Kazan",
     "timestamp": "2024-10-11T00:25:30.557953",
-    "response": "Weather in London:\nTemp: 15.6°C\nFeels like: 14.2°C\nDescription: Clear sky\nHumidity: 60%\nWind speed: 3.5 m/s"
+    "response": "Weather in Kazan:\nTemp: 15.6°C\nFeels like: 14.2°C\nDescription: Clear sky\nHumidity: 60%\nWind speed: 3.5 m/s"
   },
   {
     "user_id": 123456789,
@@ -114,7 +114,7 @@ Returns the history of requests made by a specific user.
     "user_id": 833274610,
     "command": "/weather Kazan",
     "timestamp": "2024-10-11T00:25:30.557953",
-    "response": "Weather in London:\nTemp: 15.6°C\nFeels like: 14.2°C\nDescription: Clear sky\nHumidity: 60%\nWind speed: 3.5 m/s"
+    "response": "Weather in Kazan:\nTemp: 15.6°C\nFeels like: 14.2°C\nDescription: Clear sky\nHumidity: 60%\nWind speed: 3.5 m/s"
   }
 ]
 ```
@@ -144,7 +144,7 @@ GET /logs?page=1&page_size=5&start_time=2024-10-10T00:00:00&end_time=2024-10-11T
     "user_id": 833274610,
     "command": "/weather Kazan",
     "timestamp": "2024-10-11T00:25:30.557953",
-    "response": "Weather in London:\nTemp: 15.6°C\nFeels like: 14.2°C\nDescription: Clear sky\nHumidity: 60%\nWind speed: 3.5 m/s"
+    "response": "Weather in Kazan:\nTemp: 15.6°C\nFeels like: 14.2°C\nDescription: Clear sky\nHumidity: 60%\nWind speed: 3.5 m/s"
   }
 ]
 ```
@@ -163,7 +163,7 @@ GET /logs/833274610?page=1&page_size=5
     "user_id": 833274610,
     "command": "/weather Kazan",
     "timestamp": "2024-10-11T00:25:30.557953",
-    "response": "Weather in London:\nTemp: 15.6°C\nFeels like: 14.2°C\nDescription: Clear sky\nHumidity: 60%\nWind speed: 3.5 m/s"
+    "response": "Weather in Kazan:\nTemp: 15.6°C\nFeels like: 14.2°C\nDescription: Clear sky\nHumidity: 60%\nWind speed: 3.5 m/s"
   }
 ]
 ```
