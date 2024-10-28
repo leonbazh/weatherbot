@@ -10,7 +10,7 @@ bot = telebot.TeleBot(API_TOKEN)
 # /start
 @bot.message_handler(commands=['start'])
 def start_message(message):
-    bot.send_message(message.chat.id, "Hello! This bot was created for a test task in BobrAI. Type /weather <city> to find out the weather ")
+    bot.send_message(message.chat.id, "Hello! This is a weather bot. Type /weather <city> to find out the weather ")
 
 # /weather
 @bot.message_handler(commands=['weather'])
